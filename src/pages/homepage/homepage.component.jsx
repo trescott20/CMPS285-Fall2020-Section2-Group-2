@@ -24,13 +24,31 @@ const HomePage = () => (
             </div>
             <div className="menu-item">
                 <div className="content">
-                    <h1>PC & Laptops</h1>
+                    <h1>Wearable Technology</h1>
                     <span className="subtitle">SHOP NOW</span>
                 </div>
             </div>
             <div className="menu-item">
                 <div className="content">
                     <h1>Video Games</h1>
+                    <span className="subtitle">SHOP NOW</span>
+                </div>
+            </div>
+            <div className="menu-item">
+                <div className="content">
+                    <h1>Office Electronics</h1>
+                    <span className="subtitle">SHOP NOW</span>
+                </div>
+            </div>
+            <div className="menu-item">
+                <div className="content">
+                    <h1>Bluetooth & Wireless Speakers</h1>
+                    <span className="subtitle">SHOP NOW</span>
+                </div>
+            </div>
+            <div className="menu-item">
+                <div className="content">
+                    <h1>PC & Laptops</h1>
                     <span className="subtitle">SHOP NOW</span>
                 </div>
             </div>
