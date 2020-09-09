@@ -10,10 +10,12 @@ function App() {
       <Switch>
         {/* Switch to Checkout Page */}
         <Route path = "/checkout">
+          <Header />
           <h1>Checkout</h1>
         </Route>
         {/* Switch to Login Page */}
         <Route path="/login">
+          <Header />
           <h1>Login Page</h1>
         </Route>
         {/* Default Page */}
