@@ -16,7 +16,7 @@
       
       & .background-image {
         transform: scale(1.1);
-        transition: transform 4s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        transition: transform 5s cubic-bezier(0.25, 0.45, 0.45, 0.95);
       }
 
       & .content {
@@ -50,9 +50,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      border: 1px solid black;
+      border: 0.7px solid rgb(128, 128, 128);
+      border-radius: 6px;
       background-color: white;
-      opacity: 0.7;
+      opacity: 0.8;
       position: absolute;
   
       .title {
@@ -67,4 +68,8 @@
         font-size: 16px;
       }
     }
+  }
+
+  .menu-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
