@@ -4,15 +4,9 @@ import HomePage from './pages/homepage/homepage.component.jsx';
 import Header from './components/header/header.component';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import CheckOut from '../src/pages/checkout/checkout.component'
+import ShopPage from '../src/pages/shop/shop.component';
 
 function App() {
-
-  const MobileDevices = () => (
-    <div>
-      <h1>Mobile Devices</h1>
-    </div>
-  );
-
   return (
     <Router>
       <div className="App">
@@ -36,10 +30,12 @@ function App() {
           <HomePage />
         </Route>
 
-        {/*--------------- Directory Pages ------------- */}
+        <Route path="/shop">
+          <Header />
+          <ShopPage />
+        </Route>
 
-        {/* Mob-Devices Page */}
-        <Route path='/mobiledevices' component={MobileDevices} />
+        {/*--------------- Directory Pages ------------- */}
 
       </Switch>
     </div>
