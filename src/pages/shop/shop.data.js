@@ -2,7 +2,7 @@ const Shop_Date =
     [
         {
             id: 1,
-            title: 'Hats',
+            title: 'Mobile Devices',
             routeName: 'hats',
             items: [
               {

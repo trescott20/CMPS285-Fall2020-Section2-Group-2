@@ -10,28 +10,25 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Header />
       <Switch>
 
         {/* Switch to Checkout Page */}
         <Route path = "/checkout">
-          <Header />
           <CheckOut/>
         </Route>
 
         {/* Switch to Login Page */}
         <Route path="/login">
-          <Header />
           <h1>Login Page</h1>
         </Route>
 
         {/* Default Page */}
         <Route exact path="/" >
-          <Header />
           <HomePage />
         </Route>
 
         <Route path="/shop">
-          <Header />
           <ShopPage />
         </Route>
 
