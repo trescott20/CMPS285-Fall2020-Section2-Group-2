@@ -16,6 +16,24 @@
     object-fit: contain;
 }
 
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__link {
+    color: white;
+    text-decoration: none;
+}
+
+.header__option {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .header__search {
     display: flex;
     flex: 1;
@@ -38,4 +56,15 @@
 
 .header__searchIcon:hover {
     background-color: rgb(92, 43, 226);
+}
+
+.header__lineOne {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+.header__lineTwo {
+    font-size: 12px;
+    text-align: center;
 }
