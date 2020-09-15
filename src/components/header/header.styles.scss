@@ -1,5 +1,5 @@
 .header {
-    background-color: #29b193;
+    background-color: #d87b3d;
     display: flex;
     align-items: center;
     position: sticky;
@@ -22,16 +22,43 @@
 }
 
 .header__link {
+    position: relative;
     color: white;
     text-decoration: none;
+}
+
+.header__link:hover {
+    color: rgb(41, 50, 102);
+    transition: .9s;
+}
+
+.header__link:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 80%;
+    height: 1.5px;
+    background-color:  rgb(41, 50, 102);
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+}
+
+.header__link:hover:after {
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
 }
 
 .header__option {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 15px;
 }
 
 .header__search {
@@ -50,12 +77,12 @@
     padding: 5px;
     height: 22px !important;
     color: white;
-    background-color: rgb(133, 98, 228);
+    background-color: rgb(53, 134, 172);
     cursor: pointer;
 }
 
 .header__searchIcon:hover {
-    background-color: rgb(92, 43, 226);
+    background-color: rgb(32, 80, 102);
 }
 
 .header__lineOne {
@@ -68,3 +95,5 @@
     font-size: 12px;
     text-align: center;
 }
+
+
