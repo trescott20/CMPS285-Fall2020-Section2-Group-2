@@ -1,0 +1,97 @@
+.header {
+    background-color: #d87b3d;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__logo {
+    width: 142px;
+    margin-left: 5px;
+    margin-right: 19px;
+    margin-top: 9px;
+    margin-bottom: 3px;
+    object-fit: contain;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header__link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.header__link:hover {
+    color: rgb(41, 50, 102);
+    transition: .9s;
+}
+
+.header__link:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%) scaleX(0);
+    -webkit-transform: translateX(-50%) scaleX(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    width: 80%;
+    height: 1.5px;
+    background-color:  rgb(41, 50, 102);
+    -webkit-transition: transform 250ms;
+    transition: transform 250ms;
+}
+
+.header__link:hover:after {
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1);
+}
+
+.header__option {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.header__search {
+    display: flex;
+    flex: 1;
+}
+
+.header__searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+
+.header__searchIcon {
+    padding: 5px;
+    height: 22px !important;
+    color: white;
+    background-color: rgb(53, 134, 172);
+    cursor: pointer;
+}
+
+.header__searchIcon:hover {
+    background-color: rgb(32, 80, 102);
+}
+
+.header__lineOne {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+.header__lineTwo {
+    font-size: 12px;
+    text-align: center;
+}
