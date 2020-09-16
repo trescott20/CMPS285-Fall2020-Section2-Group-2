@@ -20,7 +20,7 @@ function App() {
 
         {/* Switch to Login Page */}
         <Route path="/login">
-          <h1>Login Page</h1>
+          {/* <Login /> */}
         </Route>
 
         {/* Default Page */}

@@ -2,7 +2,8 @@ import React from 'react';
 import './header.styles.scss';
 import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';const Header = () => (
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+const Header = () => (
 
     <nav className="header">
         {/* Logo for the Navigation Bar */}
@@ -28,14 +29,16 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';const Header = () => 
             {/* 2nd link */}
             <Link to = '/contactus'className="header__link">
             <div className="header__option">
-                <span className="header__lineOne">Contact Us&emsp;&emsp;<ExpandMoreIcon style={{fontSize: 14}}/> </span>
+    
+                <span className="header__lineOne" id='dropItem'>Contact Us&emsp;&emsp;<ExpandMoreIcon style={{fontSize: 14}}/> </span>
                 <span className="header__lineTwo">We are here to help</span>
+                
             </div>
             </Link>
             {/* 3rd link */}
             <Link to = '/login'className="header__link">
             <div className="header__option">
-                <span className="header__lineOne">Welcome User,</span>
+                <span className="header__lineOne" >Welcome User,</span>
                 <span className="header__lineTwo"> Sign in </span>
             </div>
             </Link>
