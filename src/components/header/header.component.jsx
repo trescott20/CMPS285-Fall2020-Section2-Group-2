@@ -36,7 +36,7 @@ const Header = () => (
             </div>
             </Link>
             {/* 3rd link */}
-            <Link to = '/login'className="header__link">
+            <Link to = '/signin'className="header__link">
             <div className="header__option">
                 <span className="header__lineOne" >Welcome User,</span>
                 <span className="header__lineTwo"> Sign in </span>
