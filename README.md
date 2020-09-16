@@ -1,3 +1,0 @@
-# ShopQuick
-
-## E-Commerce Application
