@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import CheckOut from '../src/pages/checkout/checkout.component'
 import ShopPage from '../src/pages/shop/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-out/sign-in-and-sign-out.component';
-
+import Contactus from './pages/contactus/contactus.component';
 function App() {
   return (
     <Router>
@@ -23,6 +23,12 @@ function App() {
         <Route path="/signin">
           <SignInAndSignUpPage />
         </Route>
+
+        {/* Switch to contact us page*/}
+        <Route path="/contactus">
+          <Contactus />
+        </Route>
+
 
         {/* Default Page */}
         <Route exact path="/" >
