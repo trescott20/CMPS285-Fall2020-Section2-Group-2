@@ -5,6 +5,7 @@ import Header from './components/header/header.component';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import CheckOut from '../src/pages/checkout/checkout.component'
 import ShopPage from '../src/pages/shop/shop.component';
+import SignInAndSignUpPage from './pages/sign-in-and-sign-out/sign-in-and-sign-out.component';
 
 function App() {
   return (
@@ -19,8 +20,8 @@ function App() {
         </Route>
 
         {/* Switch to Login Page */}
-        <Route path="/login">
-          {/* <Login /> */}
+        <Route path="/signin">
+          <SignInAndSignUpPage />
         </Route>
 
         {/* Default Page */}
