@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 .sign-in {
-    width: 30vw;
+    width: 380px;
     display: flex;
     flex-direction: column;
+    // margin-right: 10px;
 
     .title {
         margin: 10px 0;
+        font-family: 'Arvo', serif;
     }
 }

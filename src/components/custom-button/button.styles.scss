@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
 .custom-button {
     min-width: 165px;
     width: auto;
@@ -6,16 +8,17 @@
     line-height: 50px;
     padding: 0 35px 0 35px;
     font-size: 15px;
-    background-color: rgb(238, 134, 37);
+    background-color: rgb(30, 127, 238);
     font-weight: 500;
     border-radius: 6px;
     color: white;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+    font-family: 'Arvo', serif;
 
     &:hover {
-        background: rgb(204, 97, 26);
+        background: rgb(21, 82, 173);
         color: rgb(255, 255, 255);
         border: none;
     }

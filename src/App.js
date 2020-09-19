@@ -33,6 +33,7 @@ function App() {
           <ShopPage />
         </Route>
 
+
         {/*--------------- Directory Pages ------------- */}
 
       </Switch>
